@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif;
+  overflow-x: hidden;
+}
+
+.main-container {
+  background-color: #fff;
+  max-width: 45rem;
+  margin: 300px auto;
+  border-radius: 18px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.048);
+}
+
+.header-img {
+  width: 100%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  margin-bottom: 3.2rem;
+}
+
+.header {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 1.8rem;
+}
+
+.main-description {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  line-height: 1.5;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 1.8rem;
+}
+
+.test {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.plan-section {
+  display: flex;
+  padding: 2.4rem;
+  border-radius: 18px;
+  background-color: hsl(225, 100%, 98%);
+
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.pricing-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.plan-price {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.plan-header {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+
+.change:link,
+.change:active {
+  margin-left: auto;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.change:hover,
+.change:visited {
+  color: blueviolet;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+}
+.submit {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border: none;
+  /* padding: 1.6rem 5rem 1.6rem 5rem; */
+  width: 77.77%;
+  height: 5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 18px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.144);
+  margin-bottom: 3.2rem;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: blueviolet;
+  transition: all 0.3s;
+}
+
+.cancel:link,
+.cancel:active {
+  display: inline-block;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 4.8rem;
+}
+
+.cancel:hover,
+.cancel:visited {
+  color: blueviolet;
+}
+
+@media (max-width: 25em) {
+  .main-container {
+    width: 37.5rem;
+  }
+
+  .test {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .submit {
+    width: 84%;
+  }
+}
